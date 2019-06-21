@@ -91,6 +91,13 @@
                     android:text="Others" />
             </RadioGroup>
 
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:button="@drawable/custom_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accept Terms and Conditions" />
+
             <Button
                 android:id="@+id/button6"
                 android:layout_width="match_parent"
