@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = null;
         switch (id){
             case R.id.b1 : intent = new Intent(MainActivity.this,ToastActivity.class);break;
+            case R.id.b2 : intent = new Intent(MainActivity.this,ButtonActivity.class);break;
+            case R.id.b3 : intent = new Intent(MainActivity.this,FormActivity.class);break;
         }
         if(intent!=null)
         startActivity(intent);

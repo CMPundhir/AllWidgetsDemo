@@ -30,6 +30,7 @@
         android:background="@color/colorPrimary" />
 
     <ImageButton
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:id="@+id/imageButton2"
         android:layout_width="match_parent"
         android:layout_height="209dp"
@@ -43,4 +44,34 @@
         android:text="Button with icons"
         android:drawableEnd="@drawable/ic_arrow_forward_green_24dp"
         android:drawableStart="@drawable/ic_attach_money_black_24dp"/>
+
+    <RadioGroup
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Others" />
+    </RadioGroup>
 </LinearLayout>

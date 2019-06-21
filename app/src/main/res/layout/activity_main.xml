@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#FF5722"
         android:textColor="#fff"
-        android:text="Button" />
+        android:text="Form" />
     <Button
         android:id="@+id/b4"
         android:layout_columnWeight="1"
