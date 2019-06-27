@@ -3,6 +3,7 @@ package com.cmpundhir.cm.allwidgetsdemo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,6 +38,7 @@ public class IntentActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.b1:
                 Intent intent = new Intent(IntentActivity.this, Next1Activity.class);
                 intent.putExtra("pubg","CHicken Dinner");
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 break;
             case R.id.b5:
@@ -53,7 +55,8 @@ public class IntentActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.b6:
                 // Create the text message with a string
                 Intent sendIntent2 = new Intent();
-                sendIntent2.setAction(Intent.ACTION_CALL);
+                sendIntent2.setAction(Intent.ACTION_DIAL);
+                sendIntent2.setData(Uri.parse("tel:8745095350"));
                 sendIntent2.putExtra(Intent.EXTRA_PHONE_NUMBER, "8745095350");
                 //sendIntent2.setType("text/plain");
 
