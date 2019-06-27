@@ -57,10 +57,6 @@ public class IntentActivity extends AppCompatActivity implements View.OnClickLis
                 Intent sendIntent2 = new Intent();
                 sendIntent2.setAction(Intent.ACTION_DIAL);
                 sendIntent2.setData(Uri.parse("tel:8745095350"));
-                sendIntent2.putExtra(Intent.EXTRA_PHONE_NUMBER, "8745095350");
-                //sendIntent2.setType("text/plain");
-
-                // Verify that the intent will resolve to an activity
                 if (sendIntent2.resolveActivity(getPackageManager()) != null) {
                     startActivity(sendIntent2);
                 }else{
