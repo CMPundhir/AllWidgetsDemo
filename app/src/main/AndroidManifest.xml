@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FormActivity"></activity>
+        <activity android:name=".intent_pckg.Next1Activity"></activity>
+        <activity android:name=".IntentActivity" />
+        <activity android:name=".FormActivity" />
         <activity android:name=".ButtonActivity" />
         <activity android:name=".ToastActivity" />
         <activity android:name=".MainActivity">

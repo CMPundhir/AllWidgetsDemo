@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFD600"
+    tools:context=".IntentActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_weight="1"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:text="Explicit Intents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TableLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <Button
+                    android:id="@+id/b1"
+                    android:layout_weight="1"
+                    android:backgroundTint="#8C8CD5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Next Activity" />
+                <Button
+                    android:id="@+id/b2"
+                    android:layout_weight="1"
+                    android:backgroundTint="#8C8CD5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Data Pass    " />
+            </TableRow>
+            <TableRow
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <Button
+                    android:layout_weight="1"
+                    android:backgroundTint="#8C8CD5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Button" />
+                <Button
+                    android:layout_weight="1"
+                    android:backgroundTint="#8C8CD5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Button" />
+            </TableRow>
+        </TableLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_weight="1"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:gravity="center_horizontal"
+            android:text="Implicit Intents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TableLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <Button
+                    android:id="@+id/b5"
+                    android:layout_weight="1"
+                    android:backgroundTint="#8C8CD5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Send Message" />
+                <Button
+                    android:id="@+id/b6"
+                    android:layout_weight="1"
+                    android:backgroundTint="#8C8CD5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Data Pass    " />
+            </TableRow>
+            <TableRow
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <Button
+                    android:layout_weight="1"
+                    android:backgroundTint="#8C8CD5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Button" />
+                <Button
+                    android:layout_weight="1"
+                    android:backgroundTint="#8C8CD5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Button" />
+            </TableRow>
+        </TableLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
