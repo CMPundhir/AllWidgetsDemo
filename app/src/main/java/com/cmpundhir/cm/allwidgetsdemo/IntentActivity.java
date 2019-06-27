@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.cmpundhir.cm.allwidgetsdemo.intent_pckg.Next1Activity;
 
@@ -48,6 +49,19 @@ public class IntentActivity extends AppCompatActivity implements View.OnClickLis
                 // Verify that the intent will resolve to an activity
                 if (sendIntent.resolveActivity(getPackageManager()) != null) {
                     startActivity(sendIntent);
+                }break;
+            case R.id.b6:
+                // Create the text message with a string
+                Intent sendIntent2 = new Intent();
+                sendIntent2.setAction(Intent.ACTION_CALL);
+                sendIntent2.putExtra(Intent.EXTRA_PHONE_NUMBER, "8745095350");
+                //sendIntent2.setType("text/plain");
+
+                // Verify that the intent will resolve to an activity
+                if (sendIntent2.resolveActivity(getPackageManager()) != null) {
+                    startActivity(sendIntent2);
+                }else{
+                    Toast.makeText(this, "cannot resolve package", Toast.LENGTH_SHORT).show();
                 }break;
         }
     }
