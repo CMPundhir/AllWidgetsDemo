@@ -63,13 +63,14 @@
         android:textColor="#fff"
         android:text="Permission" />
     <Button
+        android:id="@+id/b7"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#4CAF50"
         android:textColor="#fff"
-        android:text="Button" />
+        android:text="WebView" />
     <Button
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
