@@ -9,18 +9,20 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    Button b1,b2,b3,b4,b5;
+    Button b1,b2,b3,b4,b5,b6;
     private void init(){
         b1 = findViewById(R.id.b1);
         b2 = findViewById(R.id.b2);
         b3 = findViewById(R.id.b3);
         b4 = findViewById(R.id.b4);
         b5 = findViewById(R.id.b5);
+        b6 = findViewById(R.id.b6);
         b1.setOnClickListener(this);
         b2.setOnClickListener(this);
         b3.setOnClickListener(this);
         b4.setOnClickListener(this);
         b5.setOnClickListener(this);
+        b6.setOnClickListener(this);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.b2 : intent = new Intent(MainActivity.this,ButtonActivity.class);break;
             case R.id.b3 : intent = new Intent(MainActivity.this,FormActivity.class);break;
             case R.id.b4 : intent = new Intent(MainActivity.this,IntentActivity.class);break;
+            case R.id.b5 : intent = new Intent(MainActivity.this,DialogActivity.class);break;
+            case R.id.b6 : intent = new Intent(MainActivity.this,PermissionActivity.class);break;
         }
         if(intent!=null)
         startActivity(intent);

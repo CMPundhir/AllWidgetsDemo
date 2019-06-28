@@ -52,15 +52,16 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#E91E63"
         android:textColor="#fff"
-        android:text="Button" />
+        android:text="Dialog" />
     <Button
+        android:id="@+id/b6"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#673AB7"
         android:textColor="#fff"
-        android:text="Button" />
+        android:text="Permission" />
     <Button
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
