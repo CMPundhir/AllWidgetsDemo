@@ -2,8 +2,11 @@ package com.cmpundhir.cm.allwidgetsdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.graphics.Bitmap;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceError;
@@ -26,7 +29,7 @@ public class WebViewActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         getSupportActionBar().hide();
         webView = findViewById(R.id.webView);
-        if(!isInternetAvailable()) {
+        if(isNetworkConnected()) {
             webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
             webView.getSettings().setLoadsImagesAutomatically(true);
             webView.getSettings().setJavaScriptEnabled(true);
@@ -75,5 +78,26 @@ public class WebViewActivity extends AppCompatActivity {
         } catch (Exception e) {
             return false;
         }
+    }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (event.getAction() == KeyEvent.ACTION_DOWN) {
+            switch (keyCode) {
+                case KeyEvent.KEYCODE_BACK:
+                    if (webView.canGoBack()) {
+                        webView.goBack();
+                    } else {
+                        finish();
+                    }
+                    return true;
+            }
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    private boolean isNetworkConnected() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        return cm.getActiveNetworkInfo() != null;
     }
 }
