@@ -20,6 +20,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gravitas_one"
+                android:gravity="center_horizontal"
+                android:text="Registration"
+                android:textColor="#304FFE"
+                android:textSize="20sp"
+                android:textStyle="bold" />
             <EditText
                 android:id="@+id/editText"
                 android:drawablePadding="5dp"
