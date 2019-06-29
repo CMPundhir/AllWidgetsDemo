@@ -3,7 +3,7 @@
     package="com.cmpundhir.cm.allwidgetsdemo">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
@@ -14,7 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WebViewActivity"></activity>
+        <activity android:name=".layouts_demos.ScrollVIewActivity"></activity>
+        <activity android:name=".layouts_demos.LinearLayoutDemoActivity" />
+        <activity android:name=".LayoutsActivity" />
+        <activity android:name=".WebViewActivity" />
         <activity android:name=".PermissionActivity" />
         <activity android:name=".DialogActivity" />
         <activity android:name=".intent_pckg.Next1Activity" />
