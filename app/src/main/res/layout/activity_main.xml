@@ -81,13 +81,14 @@
         android:textColor="#fff"
         android:text="Layouts" />
     <Button
+        android:id="@+id/b9"
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFAB00"
         android:textColor="#fff"
-        android:text="Button" />
+        android:text="Custom List" />
     <Button
         android:layout_columnWeight="1"
         android:layout_rowWeight="1"

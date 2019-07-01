@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".layouts_demos.ScrollVIewActivity"></activity>
+        <activity android:name=".CustomListviewActivity"></activity>
+        <activity android:name=".layouts_demos.ScrollVIewActivity" />
         <activity android:name=".layouts_demos.LinearLayoutDemoActivity" />
         <activity android:name=".LayoutsActivity" />
         <activity android:name=".WebViewActivity" />
